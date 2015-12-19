@@ -13,11 +13,11 @@ const privateRoutes = FlowRouter.group({
     triggersEnter: [privateRedirect, pageView]
 });
 
-// @TODO: give this route a name
+// @TODO: give this route a better name
 
 privateRoutes.route('/confirm', {
     name: 'confirm',
     action() {
-    ReactLayout.render(App.Layout, {view: <App.Confirm />});
-}
+        ReactLayout.render(App.Layout, {view: <App.Confirm />});
+    }
 });
