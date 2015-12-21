@@ -2,9 +2,12 @@ Meteor.methods({
     insertQuestion(question) {
         check(question, String);
 
-        let question = _.extend(question, {
+        //@TODO: refactor this
+
+        let quest = {
+            question: question,
             created: now
-        }), questionId = Questions.insert(question);
+        }, questionId = Questions.insert(quest);
 
         return {
             _id: questionId
