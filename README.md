@@ -15,7 +15,7 @@ Multi-step survey where user can get an answer to a question. Built with meteor 
 
 ## What it is
 
-Ask a random person any question using this app.
+Ask a random person any question using this app. The question will be returned with an answer. At this point, the person that asks the questions and the person that answers can chat.
 
 ## How to use
 
