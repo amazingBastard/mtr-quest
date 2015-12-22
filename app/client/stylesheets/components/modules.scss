@@ -4,6 +4,7 @@
 .module {
   display: block;
   position: relative;
+  margin: 0 auto;
   padding: $base;
 
   &.fixed {
@@ -32,13 +33,11 @@
   }
 
   &.logo {
-    margin: $micro;
-    padding: $micro $mini 0;
-    border-radius: $micro;
-    background-color: $primary-color;
+    padding: $mini;
+    text-align: center;
 
     .logo {
-      color: $light;
+      margin: 0;
       text-decoration: none;
     }
   }
