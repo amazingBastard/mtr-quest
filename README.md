@@ -197,6 +197,7 @@ environments/       # Environments folder
   * [fortawesome:fontawesome](https://github.com/MeteorPackaging/Font-Awesome)
 * Development
   * [fourseven:scss](https://github.com/fourseven/meteor-scss)
+  * [wolves:bourbon](https://github.com/wolvesio/meteor-bourbon)
   * [stevezhu:lodash](https://github.com/stevezhu/meteor-lodash)
   * [digilord:faker](https://github.com/digilord/meteor-faker)
   * [momentjs:moment](https://github.com/moment/moment/)
