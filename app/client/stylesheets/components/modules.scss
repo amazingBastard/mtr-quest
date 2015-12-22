@@ -1,0 +1,55 @@
+@import '../_variables';
+
+
+.module {
+  display: block;
+  position: relative;
+  padding: $base;
+
+  &.fixed {
+    position: fixed;
+    left: 0;
+
+    &.bottom {
+      bottom: 0;
+    }
+  }
+
+  &.loading {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: $fluid-full;
+    width: $full;
+    align-items: center;
+    justify-content: center;
+
+    .loader.image {
+      width: $half;
+      margin: auto;
+    }
+  }
+
+  &.logo {
+    margin: $micro;
+    padding: $micro $mini 0;
+    border-radius: $micro;
+    background-color: $primary-color;
+
+    .logo {
+      color: $light;
+      text-decoration: none;
+    }
+  }
+
+  &.copyright {
+    padding: $micro;
+
+    .copyright {
+      color: $gray-light;
+      font-size: $tiny;
+      text-align: center;
+    }
+  }
+}
