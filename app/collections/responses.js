@@ -1,13 +1,13 @@
 Responses = new Mongo.Collection('responses');
 
 Responses.allow({
-        insert: () => false,
+    insert: () => false,
     update: () => false,
     remove: () => false
 });
 
 Responses.deny({
-        insert: () => true,
+    insert: () => true,
     update: () => true,
     remove: () => true
 });

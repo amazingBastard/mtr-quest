@@ -1,13 +1,13 @@
 Questions = new Mongo.Collection('questions');
 
 Questions.allow({
-        insert: () => false,
+    insert: () => false,
     update: () => false,
     remove: () => false
 });
 
 Questions.deny({
-        insert: () => true,
+    insert: () => true,
     update: () => true,
     remove: () => true
 });
