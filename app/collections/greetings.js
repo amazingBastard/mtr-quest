@@ -17,16 +17,12 @@ let GreetingsSchema = new SimpleSchema({
         type: String,
         label: 'The greeting string that is sent to the client'
     },
-    'owner': {
-        type: String,
-        label: 'The owner id of the greeting object'
-    },
     'type': {
         type: String,
         label: 'The type of greeting in relation to the user',
         optional: true
     },
-    'createdAt': {
+    'created': {
         type: Date,
         label: 'The date the greeting object was created'
     }

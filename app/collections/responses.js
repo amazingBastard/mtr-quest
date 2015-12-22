@@ -17,16 +17,12 @@ let ResponsesSchema = new SimpleSchema({
         type: String,
         label: 'The response string that is sent to the client'
     },
-    'owner': {
-        type: String,
-        label: 'The owner id of the response object'
-    },
     'type': {
         type: String,
         label: 'The type of response in relation to the question',
         optional: true
     },
-    'createdAt': {
+    'created': {
         type: Date,
         label: 'The date the response object was created'
     }

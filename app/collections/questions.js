@@ -27,7 +27,7 @@ let QuestionsSchema = new SimpleSchema({
         label: 'The type of question in relation to the response',
         optional: true
     },
-    'createdAt': {
+    'created': {
         type: Date,
         label: 'The date the question object was created'
     }
