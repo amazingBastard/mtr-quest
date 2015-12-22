@@ -1,0 +1,363 @@
+@import '_variables';
+
+html {
+
+  body {
+
+    p, a, li, td, th, pre, code,
+    blockquote, article, figure,
+    textarea, input, select, button {
+      margin: 0;
+      margin-bottom: $tiny;
+      color: $font-color;
+      font-family: $font-family-base;
+      font-size: $font-size-base;
+      line-height: 1;
+
+      @media (min-width: $phone-width) {
+        font-size: modular-scale(1);
+      }
+
+      @media (min-width: $tablet-width) {
+        font-size: modular-scale(2);
+      }
+
+      @media (min-width: $laptop-width) {
+        font-size: modular-scale(3);
+      }
+
+      @media (min-width: $desktop-width) {
+        font-size: modular-scale(4);
+      }
+
+      @media (min-width: $large-desktop-width) {
+        font-size: modular-scale(5);
+      }
+
+      @media (min-width: $huge-desktop-width) {
+        font-size: modular-scale(6);
+      }
+
+      @media (min-width: $jumbo-desktop-width) {
+        font-size: modular-scale(7);
+      }
+
+      @media (min-width: $massive-desktop-width) {
+        font-size: modular-scale(8);
+      }
+
+      @media (min-width: $giant-desktop-width) {
+        font-size: modular-scale(9);
+      }
+
+      @media (min-width: $colossal-desktop-width) {
+        font-size: modular-scale(10);
+      }
+    }
+
+    a {
+      color: $link-color;
+      font-size: inherit;
+      text-decoration: none;
+
+      &:hover {
+        color: darken($link-color, $sixteenth);
+        text-decoration: underline;
+      }
+    }
+
+    h1, h2, h3, h4, h5, h6,
+    th, figcaption, .title {
+      margin: 0;
+      margin-bottom: $tiny;
+      color: $header-color;
+      font-family: $font-family-header;
+      font-size: inherit;
+      font-weight: bold;
+      line-height: 1;
+    }
+
+    .title {
+      margin: 0;
+      text-align: center;
+
+      .meta {
+        display: block;
+        color: $gray-dark;
+        font-size: $half;
+        font-weight: normal;
+      }
+    }
+
+    h1,
+    h1.title,
+    input.title {
+      font-size: modular-scale(5);
+
+      @media (min-width: $phone-width) {
+        font-size: modular-scale(6);
+      }
+
+      @media (min-width: $tablet-width) {
+        font-size: modular-scale(7);
+      }
+
+      @media (min-width: $laptop-width) {
+        font-size: modular-scale(8);
+      }
+
+      @media (min-width: $desktop-width) {
+        font-size: modular-scale(9);
+      }
+
+      @media (min-width: $large-desktop-width) {
+        font-size: modular-scale(10);
+      }
+
+      @media (min-width: $huge-desktop-width) {
+        font-size: modular-scale(11);
+      }
+
+      @media (min-width: $jumbo-desktop-width) {
+        font-size: modular-scale(12);
+      }
+
+      @media (min-width: $massive-desktop-width) {
+        font-size: modular-scale(13);
+      }
+
+      @media (min-width: $giant-desktop-width) {
+        font-size: modular-scale(14);
+      }
+
+      @media (min-width: $colossal-desktop-width) {
+        font-size: modular-scale(15);
+      }
+    }
+
+    h2,
+    h2.title {
+      font-size: modular-scale(4);
+
+      @media (min-width: $phone-width) {
+        font-size: modular-scale(5);
+      }
+
+      @media (min-width: $tablet-width) {
+        font-size: modular-scale(6);
+      }
+
+      @media (min-width: $laptop-width) {
+        font-size: modular-scale(7);
+      }
+
+      @media (min-width: $desktop-width) {
+        font-size: modular-scale(8);
+      }
+
+      @media (min-width: $large-desktop-width) {
+        font-size: modular-scale(9);
+      }
+
+      @media (min-width: $huge-desktop-width) {
+        font-size: modular-scale(10);
+      }
+
+      @media (min-width: $jumbo-desktop-width) {
+        font-size: modular-scale(11);
+      }
+
+      @media (min-width: $massive-desktop-width) {
+        font-size: modular-scale(12);
+      }
+
+      @media (min-width: $giant-desktop-width) {
+        font-size: modular-scale(13);
+      }
+
+      @media (min-width: $colossal-desktop-width) {
+        font-size: modular-scale(14);
+      }
+    }
+
+    h3,
+    h3.title {
+      font-size: modular-scale(3);
+
+      @media (min-width: $phone-width) {
+        font-size: modular-scale(4);
+      }
+
+      @media (min-width: $tablet-width) {
+        font-size: modular-scale(5);
+      }
+
+      @media (min-width: $laptop-width) {
+        font-size: modular-scale(6);
+      }
+
+      @media (min-width: $desktop-width) {
+        font-size: modular-scale(7);
+      }
+
+      @media (min-width: $large-desktop-width) {
+        font-size: modular-scale(8);
+      }
+
+      @media (min-width: $huge-desktop-width) {
+        font-size: modular-scale(9);
+      }
+
+      @media (min-width: $jumbo-desktop-width) {
+        font-size: modular-scale(10);
+      }
+
+      @media (min-width: $massive-desktop-width) {
+        font-size: modular-scale(11);
+      }
+
+      @media (min-width: $giant-desktop-width) {
+        font-size: modular-scale(12);
+      }
+
+      @media (min-width: $colossal-desktop-width) {
+        font-size: modular-scale(13);
+      }
+    }
+
+    h4,
+    h4.title {
+      font-size: modular-scale(2);
+
+      @media (min-width: $phone-width) {
+        font-size: modular-scale(3);
+      }
+
+      @media (min-width: $tablet-width) {
+        font-size: modular-scale(4);
+      }
+
+      @media (min-width: $laptop-width) {
+        font-size: modular-scale(5);
+      }
+
+      @media (min-width: $desktop-width) {
+        font-size: modular-scale(6);
+      }
+
+      @media (min-width: $large-desktop-width) {
+        font-size: modular-scale(7);
+      }
+
+      @media (min-width: $huge-desktop-width) {
+        font-size: modular-scale(8);
+      }
+
+      @media (min-width: $jumbo-desktop-width) {
+        font-size: modular-scale(9);
+      }
+
+      @media (min-width: $massive-desktop-width) {
+        font-size: modular-scale(10);
+      }
+
+      @media (min-width: $giant-desktop-width) {
+        font-size: modular-scale(11);
+      }
+
+      @media (min-width: $colossal-desktop-width) {
+        font-size: modular-scale(12);
+      }
+    }
+
+    h5,
+    h5.title {
+      font-size: modular-scale(1);
+
+      @media (min-width: $phone-width) {
+        font-size: modular-scale(2);
+      }
+
+      @media (min-width: $tablet-width) {
+        font-size: modular-scale(3);
+      }
+
+      @media (min-width: $laptop-width) {
+        font-size: modular-scale(4);
+      }
+
+      @media (min-width: $desktop-width) {
+        font-size: modular-scale(5);
+      }
+
+      @media (min-width: $large-desktop-width) {
+        font-size: modular-scale(6);
+      }
+
+      @media (min-width: $huge-desktop-width) {
+        font-size: modular-scale(7);
+      }
+
+      @media (min-width: $jumbo-desktop-width) {
+        font-size: modular-scale(8);
+      }
+
+      @media (min-width: $massive-desktop-width) {
+        font-size: modular-scale(9);
+      }
+
+      @media (min-width: $giant-desktop-width) {
+        font-size: modular-scale(10);
+      }
+
+      @media (min-width: $colossal-desktop-width) {
+        font-size: modular-scale(11);
+      }
+    }
+
+    h6,
+    h6.title {
+      font-size: modular-scale(0);
+
+      @media (min-width: $phone-width) {
+        font-size: modular-scale(1);
+      }
+
+      @media (min-width: $tablet-width) {
+        font-size: modular-scale(2);
+      }
+
+      @media (min-width: $laptop-width) {
+        font-size: modular-scale(3);
+      }
+
+      @media (min-width: $desktop-width) {
+        font-size: modular-scale(4);
+      }
+
+      @media (min-width: $large-desktop-width) {
+        font-size: modular-scale(5);
+      }
+
+      @media (min-width: $huge-desktop-width) {
+        font-size: modular-scale(6);
+      }
+
+      @media (min-width: $jumbo-desktop-width) {
+        font-size: modular-scale(7);
+      }
+
+      @media (min-width: $massive-desktop-width) {
+        font-size: modular-scale(8);
+      }
+
+      @media (min-width: $giant-desktop-width) {
+        font-size: modular-scale(9);
+      }
+
+      @media (min-width: $colossal-desktop-width) {
+        font-size: modular-scale(10);
+      }
+    }
+  }
+}
