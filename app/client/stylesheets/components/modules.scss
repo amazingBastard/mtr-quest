@@ -2,19 +2,46 @@
 
 
 .module {
-  display: block;
+  display: flex;
+  flex: 1;
   position: relative;
   margin: 0 auto;
   padding: $base;
 
+  // helpers
+  &.top {
+    top: 0;
+    align-self: flex-start;
+  }
+
+  &.bottom {
+    bottom: 0;
+    align-self: flex-end;
+  }
+
+  &.left {
+    left: 0;
+  }
+
+  &.right {
+    right: 0;
+  }
+
   &.fixed {
     position: fixed;
-    left: 0;
-
-    &.bottom {
-      bottom: 0;
-    }
   }
+
+  &.absolute {
+    position: absolute;
+  }
+
+  &.centered {
+    justify-content: center;
+    align-items: center;
+    min-height: $fluid-three-quarters;
+  }
+
+  // common
 
   &.loading {
     display: flex;
@@ -49,6 +76,16 @@
       color: $gray-light;
       font-size: $tiny;
       text-align: center;
+    }
+  }
+
+  // core
+
+  &.greeting {
+    text-align: center;
+
+    .greeting {
+      margin: 0;
     }
   }
 }

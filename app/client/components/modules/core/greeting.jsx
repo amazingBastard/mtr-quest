@@ -1,8 +1,8 @@
 App.Greeting = React.createClass({
     render() {
         return (
-            <module className="greeting module">
-                <p>Hello! What's on your mind?</p>
+            <module className="centered greeting module">
+                <p className="greeting">Hello! What's on your mind?</p>
             </module>
         );
     }
