@@ -2,6 +2,7 @@ App.Greeting = React.createClass({
     mixins: [ReactMeteorData],
 
     getMeteorData() {
+        // @TODO: change selector type depending on user
         let selector = {type: 'casual'},
             subscription = Meteor.subscribe('greetings', selector);
 
