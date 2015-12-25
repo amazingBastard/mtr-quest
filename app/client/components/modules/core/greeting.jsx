@@ -8,7 +8,7 @@ App.Greeting = React.createClass({
 
         return {
             isLoading: !subscription.ready(),
-            greeting: Greetings.find({}, {sort: {createdAt: -1}, limit: 1}).fetch()
+            greeting: Greetings.find({}, {sort: {created: -1}, limit: 1}).fetch()
         };
     },
 
