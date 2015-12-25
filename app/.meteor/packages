@@ -58,7 +58,8 @@ fortawesome:fontawesome
 # Development
 
 fourseven:scss
-stevezhu:lodash
-digilord:faker
-momentjs:moment
 wolves:bourbon
+stevezhu:lodash
+momentjs:moment
+digilord:faker
+msavin:mongol
