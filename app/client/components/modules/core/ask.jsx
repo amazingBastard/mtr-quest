@@ -3,8 +3,10 @@ App.Ask = React.createClass({
         return (
             <module className="ask module">
                 <form className="ask question form">
-                    <input type="text" className="question input"/>
-                    <button type="submit" className="primary centered submit button">Ask</button>
+                    <div className="input group">
+                        <input type="text" className="question input"/>
+                        <button type="submit" className="primary centered submit button">Ask</button>
+                    </div>
                 </form>
             </module>
         );
