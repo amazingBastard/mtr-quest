@@ -5,7 +5,7 @@ App.Ask = React.createClass({
                 <form className="ask question form">
                     <div className="input group">
                         <input type="text" className="question input"/>
-                        <button type="submit" className="primary centered submit button">Ask</button>
+                        <button type="submit" className="secondary centered submit button">Ask</button>
                     </div>
                 </form>
             </module>
