@@ -35,6 +35,7 @@
   }
 
   &.centered {
+    display: flex;
     justify-content: center;
     align-items: center;
     min-height: $fluid-three-quarters;
@@ -84,9 +85,5 @@
 
   &.greeting {
     text-align: center;
-
-    .greeting {
-      margin: $fluid-third 0 0;
-    }
   }
 }

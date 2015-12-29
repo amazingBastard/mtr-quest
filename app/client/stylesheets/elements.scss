@@ -199,6 +199,13 @@ html {
           border-bottom-left-radius: 0;
         }
       }
+
+      &.question {
+        position: absolute;
+        left: $half;
+        bottom: $fluid-eighth;
+        transform: translateX(-$half);
+      }
     }
 
     .message {
